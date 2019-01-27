@@ -1,0 +1,14 @@
+.calculator {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    display: grid;
+    /* 4 colunas, cada uma ocupando 25% */
+    grid-template-columns: repeat(4, 25%);
+    /*
+    Primeira linha: Componente Display ocupando 1 fragmento.
+    As demais (componente Button) linhas ocupando 48px de altura */
+    grid-template-rows: 1fr 48px 48px 48px 48px 48px;
+}
